@@ -132,6 +132,7 @@
 
   .header {
     box-shadow: 0 1rem 1rem -1rem var(--dark);
+    position: relative;
   }
 
   .header .header_wrapper {
@@ -158,6 +159,7 @@
   /* TOP */
 
   .top {
+    z-index: -1;
     background-color: var(--secondary);
     padding: 1.5rem 0;
   }
@@ -325,7 +327,16 @@
   .catalogs .catalogs_card {
     max-width: 38rem;
     background: var(--light);
+    box-shadow: 0 1rem 1rem -1rem var(--dark);
+    transition: 0.5s ease;
   }
+
+  /* .catalogs .catalogs_card:hover {
+    max-width: 38rem;
+    background: var(--dark);
+    box-shadow: 0 1rem 1rem -1rem var(--dark);
+    transition: 0.5s ease;
+  } */
 
   .catalogs .catalogs_card img {
     width: 100%;
@@ -344,6 +355,7 @@
     color: var(--secondary);
     font-weight: bold;
     font-size: 2rem;
+    transition: 0.5s ease;
   }
 
   .catalogs .catalogs_text p {
@@ -435,4 +447,15 @@
     padding: 1rem 2.5rem;
     border-radius: 5rem;
     box-shadow: 0 .5rem 1rem 0 var(--dark);
+    transition: 0.5s ease;
+  }
+
+  .btn:hover {
+    background: var(--light);
+    color: var(--primary);
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem 0 var(--dark);
+    transition: 0.5s ease;
   }
