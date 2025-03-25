@@ -601,6 +601,106 @@ img {
   padding-top: 5rem;
 }
 
+/* UPDATES-PAGE */
+
+/* UPDTBANNER */
+
+.updtBanner {
+  padding: 5rem 0;
+  background: var(--light);
+}
+.updtBanner .updtBanner_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10rem;
+}
+
+.updtBanner .updtBanner_txt h2 {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.updtBanner .updtBanner_txt p {
+  width: 50rem;
+  text-align: justify;
+}
+
+/* UPDTCARD */
+
+.updtCard {
+  background: var(--light);
+  padding: 3rem 0;
+}
+
+.updtCard .updtCard_wrapper{
+  display: grid;
+  grid-template-columns: 2fr 1fr
+}
+
+.updtCard .updtCard_wrapper h2 {
+  color: var(--secondary);
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 0;
+}
+
+.updtCard .updtCard_cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.updtCard .updtCard_table table tr td {
+  width: 20rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+/* RECPROJ */
+
+.recProj {
+  background: var(--light);
+  padding: 5rem 0;
+}
+
+.recProj h2 {
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.recProj .recProj_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.recProj .recProj_cap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recProj .recProj_left,
+.recProj .recProj_right {
+  display: flex;
+  gap: 1rem;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.recProj .recProj_left a,
+.recProj .recProj_right a {
+  color: var(--dark);
+}
+
+
+
 /* CONTACTS-PAGE */
 
 /* CONTACTS */
@@ -757,4 +857,29 @@ img {
 .catalogs_card a {
   color: var(--dark);
   padding-bottom: 1rem;
+}
+
+.updtCard_block {
+  background: var(--tertiary);
+  width: fit-content;
+  padding: 2rem 5rem;
+}
+
+.updtCard_block h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.updtCard_block p {
+  width: 25rem;
+  text-align: justify;
+  padding: 1rem 0;
+}
+
+.updtCard_block a {
+  font-size: 3rem;
+  color: var(--dark);
+  display: flex;
+  justify-content: flex-end;
 }
