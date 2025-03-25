@@ -510,6 +510,97 @@ img {
   gap: 3rem;
 }
 
+/* CATALOG-PAGE */
+
+/* CTLGBANNER */
+
+.ctlgBanner {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url(./img/catalog-banner.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctlgBanner .ctlgBanner_text h2 {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ctlgBanner .ctlgBanner_text h3 {
+  color: var(--dark);
+  font-size: 3rem;
+  width: 40rem;
+  text-align: center;
+}
+
+
+
+/* CTLGCONTENT */
+
+.ctlgContent {
+  background: var(--light);
+}
+
+.ctlgContent h2 {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem 0 10rem;
+}
+
+.ctlgContent .ctlgContent_content {
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
+  align-items: center;
+  padding: 4.1rem 0;
+}
+
+.ctlgContent .ctlgContent_content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.ctlgContent .ctlgContent_img {
+  position: relative;
+  z-index: 10;
+}
+
+.ctlgContent .ctlgContent_img::before {
+  content: "";
+  display: block;
+  background: var(--secondary);
+  width: 100vw;
+  height: 51rem;
+  position: absolute;
+  top: -15%;
+  right: 10rem;
+  z-index: -1;
+}
+
+.ctlgContent .ctlgContent_content:nth-child(2) .ctlgContent_img::before {
+  left: 10rem;
+}
+
+.ctlgContent .ctlgContent_txt h3 {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ctlgContent .ctlgContent_txt p {
+  width: 50rem;
+  text-align: justify;
+  padding-top: 5rem;
+}
+
 /* CONTACTS-PAGE */
 
 /* CONTACTS */
