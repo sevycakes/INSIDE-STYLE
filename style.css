@@ -450,30 +450,22 @@ img {
   justify-content: space-between;
 }
 
-.catalogs .catalogs_card {
-  max-width: 38rem;
-  background: var(--light);
+@media screen and (max-width: 500px) {
+
+  .catalogs {
+    margin: 0 3rem;
+  }
+
+  .catalogs h2 span::before {
+    width: 28rem;
+  }
+
+  .catalogs .catalogs_wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
 }
-
-.catalogs .catalogs_card img {
-  width: 100%;
-}
-
-  .catalogs .catalogs_card h3 {
-    color: var(--secondary);
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
-  .catalogs .catalogs_text p {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-  }
-
-  .catalogs .catalogs_text a {
-    font-family: sans-serif;
-    color: var(--dark);
-  }
 
 /* CONTACTUS */
 
@@ -502,6 +494,18 @@ img {
 }
 .contactus .btn {
   margin: 1rem 0;
+}
+
+@media screen and (max-width: 500px) {
+
+  .contactus {
+    padding: 0 3rem;
+  }
+
+  .contactus .contactus_wrapper p {
+    text-align: center;
+  }
+
 }
 
 /* FOOTER */
@@ -535,6 +539,20 @@ img {
 .footer .footer_cred {
   color: var(--light);
   font-family: sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+
+  .footer {
+    padding: 3rem;
+  }
+
+  .footer .footer_wrapper {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+  }
+
 }
 
 /* CONTACTS-PAGE */
@@ -592,6 +610,35 @@ img {
   color: var(--dark);
 }
 
+@media screen and (max-width: 500px) {
+
+  .abtBanner {
+    margin: 0 3rem;
+  }
+
+  .abtBanner .abtBanner_wrapper {
+    flex-direction: column;
+  }
+
+  .abtBanner .abtBanner_img span::before {
+    width: 25rem;
+  }
+
+  .abtBanner .abtBanner_txt {
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .abtBanner .abtBanner_txt p {
+    width: fit-content;
+  }
+
+  .abtBanner .abtBanner_txt ul {
+    justify-content: center;
+  }
+
+}
+
 /* ABTCARDS */
 
 .abtCards {
@@ -622,6 +669,27 @@ img {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  .abtCards {
+    padding: 0 3rem;
+  }
+
+  .abtCards h2 {
+    text-align: center;
+  }
+
+  .abtCards .abtCards_top {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .abtCards .abtCards_bot {
+    display: none;
+  }
+
 }
 
 /* CATALOG-PAGE */
@@ -743,6 +811,12 @@ img {
   text-align: justify;
 }
 
+@media screen and (max-width: 500px) {
+
+  
+
+}
+
 /* UPDTCARD */
 
 .updtCard {
@@ -752,7 +826,7 @@ img {
 
 .updtCard .updtCard_wrapper{
   display: grid;
-  grid-template-columns: 2fr 1fr
+  grid-template-columns: 2fr 1fr;
 }
 
 .updtCard .updtCard_wrapper h2 {
@@ -856,7 +930,6 @@ img {
 
 .contacts .contacts_input textarea {
   padding-bottom: 10rem;
-  /* border-bottom: 2px solid var(--dark); */
 }
 
 .contacts .contacts_input button {
@@ -901,6 +974,26 @@ img {
   align-items: center;
   font-size: 2rem;
   color: var(--light);
+}
+
+@media screen and (max-width: 500px) {
+
+  .contacts {
+    margin: 0 3rem;
+  }
+
+  .contacts h2 {
+    text-align: center;
+  }
+
+  .contacts .contacts_wrapper {
+    flex-direction: column;
+  }
+
+  .contacts .contacts_input p {
+    text-align: center;
+  }
+
 }
 
 /* REPEATABLE PATTERS */
