@@ -391,12 +391,34 @@ img {
 .about .about_text p {
   margin: 1rem 0;
   color: var(--light);
+  text-align: justify;
 }
 
-/* .about .about_text p:nth-child(3) {
-  background: #000;
-  margin: unset;
-} */
+@media screen and (max-width: 500px) {
+  
+  .about {
+    padding: 0 3rem;
+  }
+
+  .about h2 span::before{
+    width: 18rem;
+  }
+
+  .about .about_wrapper {
+    flex-direction: column;
+  }
+
+  .about .about_wrapper img {
+    width: 100%;
+  }
+
+  .about .about_text p:nth-child(2),
+  .about .about_text p:nth-child(3),
+  .about .about_text p:nth-child(4) {
+    display: none;
+  }
+
+}
 
 /* CATALOGS */
 
@@ -428,23 +450,14 @@ img {
   justify-content: space-between;
 }
 
-  .catalogs .catalogs_card {
-    max-width: 38rem;
-    background: var(--light);
-  }
+.catalogs .catalogs_card {
+  max-width: 38rem;
+  background: var(--light);
+}
 
-  .catalogs .catalogs_card img {
-    width: 100%;
-  }
-
-  .catalogs .catalogs_text {
-    max-width: 34rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 1rem;
-    gap: 1rem;
-  }
+.catalogs .catalogs_card img {
+  width: 100%;
+}
 
   .catalogs .catalogs_card h3 {
     color: var(--secondary);
@@ -939,6 +952,7 @@ img {
   margin: 0 auto;
   padding: 1rem;
   gap: 1rem;
+  transition: 0.5s ease;
 }
 
 .catalogs_card h3 {
@@ -951,7 +965,6 @@ img {
   color: var(--dark);
   font-family: sans-serif;
   font-size: 1.5rem;
-  /* padding-bottom: 1.5rem; */
   text-align: justify;
 }
 
